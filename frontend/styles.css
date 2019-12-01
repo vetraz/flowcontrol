@@ -1,0 +1,59 @@
+html,
+body {
+    min-height: 100%;
+    font-size: 16px;
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+body {
+    background: #fdfafa;
+}
+
+.tois {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: center;
+    align-items    : center;
+}
+
+.toi {
+    display        : flex;
+    justify-content: center;
+    margin         : 10px;
+    padding        : 1rem;
+    border-radius  : 1rem;
+}
+
+.toi__title {
+    font-size: 2rem;
+}
+
+.toi__ico {
+    flex-shrink        : 0;
+    min-height         : 50px;
+    width              : 35%;
+    background-position: center center;
+    background-size    : 90%;
+    background-repeat  : no-repeat;
+}
+
+.toi__ico_male {
+    background-image: url("static/img/male.png");
+}
+
+.toi__ico_female {
+    background-image: url("static/img/female.png");
+}
+
+.busy {
+    background: rgba(243, 186, 167, 0.63);
+}
+
+.free {
+    background: rgba(109, 230, 125, 0.18);
+}

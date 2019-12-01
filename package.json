@@ -1,0 +1,20 @@
+{
+  "name": "flowcontrol",
+  "version": "0.0.1",
+  "description": "Room availability auto report server",
+  "repository": "https://github.com/vetraz/flowcontrol/",
+  "scripts": {
+    "start": "npm run start:ws | npm run start:static",
+    "start:ws": "node ws-server.js",
+    "start:static": "node static-server.js"
+  },
+  "author": "Artsiom Bolhar <laizerart@yandex.ru>",
+  "license": "MIT",
+  "dependencies": {
+    "@serialport/parser-readline": "^8.0.4",
+    "finalhandler": "^1.1.2",
+    "serialport": "^8.0.5",
+    "serve-static": "^1.14.1",
+    "ws": "^7.2.0"
+  }
+}
